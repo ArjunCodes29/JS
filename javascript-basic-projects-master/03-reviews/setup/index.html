@@ -14,7 +14,39 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>review project</h1>
+    <main><!-- main tag is not neccersay but it is a good practise
+      and in it we should keep the main content of the web page so no things like sidebars navigation links footers etc-->
+      <section class="container">
+         <div class="title">
+           <h2> Pankaj Food reviews</h2>
+           <div class="underline"></div>
+         </div>
+         <article class="review"><!--he <article> tag specifies independent, self-contained content. An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.-->
+           <div class="img-container">
+             <img src="person-1.jpeg" id="person-img">
+           </div>
+           <h4 id="author"> sara Jones</h4>
+           <p id="job">UX Designer</p>
+           <p id="info">
+             asdfsafd asdf asdf saf das df  fsaldf ff sofdj fdjfsf ssf asdfsafdas 
+             asfd alsdf saldfjsafd sfd fowf dfas o woaklakjd aw
+             a sdfsda ow asdff s afjslf ao w a
+           </p> 
+          <div class="button-container">
+            <button class="prev-btn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="next-btn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+          <button class="random-btn">
+            Random Review!
+          </button>
+         </article>
+
+      </section>
+    </main>>
     <!-- javascript -->
     <script src="app.js"></script>
   </body>

@@ -37,3 +37,59 @@ const reviews = [
       "Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ",
   },
 ];
+// select items
+const img = document.getElementById("person-img");
+const author = document.getElementById("author");
+const job = document.getElementById("job");
+const info = document.getElementById("info");
+
+const  prevBtn = document.querySelector(".prev-btn");
+const  nextBtn = document.querySelector(".next-btn");
+const  randomBtn = document.querySelector(".random-btn");
+
+// set starting item
+// basically when the document loads you only want to see one of the reviews not all
+// so keeping current item allows u to change which item  u see using array index 
+let currentItem = 0;
+//load initial item
+
+window.addEventListener("DOMContentLoaded", function(){
+// basically when the full dom loads then execute this function to the window
+  showPerson(currentItem);
+})
+
+// show person based on item
+
+function showPerson(person){
+  const item = reviews[person];
+  author.textContent = item.name;
+  img.src = item.img;
+  job.textContent = item.job;
+  info.textContent = item.text;
+}
+
+// next button
+
+
+nextBtn.addEventListener('click', function(){
+  currentItem++;
+  if (currentItem> reviews.length - 1){
+    currentItem = 0
+  }
+
+  showPerson(currentItem);
+});
+//old button
+prevBtn.addEventListener('click', function(){
+  currentItem--;
+  if (currentItem < 0){
+    currentItem = reviews.length -1
+  }
+
+  showPerson(currentItem);
+});
+
+randomBtn.addEventListener('click',function(){
+  currentItem = Math.floor(Math.random()*reviews.length)
+  showPerson(currentItem);
+});
