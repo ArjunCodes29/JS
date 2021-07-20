@@ -20,7 +20,7 @@ btns.forEach(function(btn){
         count++;
     }
     else if(styles.contains("round")){
-       count =  Math.round(count/ 10) * 10
+       count =  Math.round(count/10) *10
     }  
     else{
         count=0
@@ -39,3 +39,4 @@ btns.forEach(function(btn){
     // we use .textContent because we are changing the text content
     });
 });
+
