@@ -15,6 +15,8 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 .display{
+    font-size: 3rem;
+    color: white;
     margin-left: 5px;
     margin-top: 5px;
     width: 390px;
@@ -69,3 +71,57 @@ body{
 .opbtn:hover{
     background-color: rgb(197, 194, 194);
 }
+/*two.addEventListener('click',function(){
+    x.push(2);
+    let x_num = +x.join("")
+    displayscreen(x_num)
+    
+});
+three.addEventListener('click',function(){
+    x.push(3);
+    let x_num = +x.join("")
+    displayscreen(x_num)
+    
+});
+four.addEventListener('click',function(){
+    x.push(4);
+    let x_num = +x.join("")
+    displayscreen(x_num)
+    
+});
+five.addEventListener('click',function(){
+    x.push(5);
+    let x_num = +x.join("")
+    displayscreen(x_num)
+    
+});
+six.addEventListener('click',function(){
+    x.push(6);
+    let x_num = +x.join("")
+    displayscreen(x_num)
+    
+});
+seven.addEventListener('click',function(){
+    x.push(7);
+    let x_num = +x.join("")
+    displayscreen(x_num)
+    
+});
+eight.addEventListener('click',function(){
+    x.push(8);
+    let x_num = +x.join("")
+    displayscreen(x_num)
+    
+});
+nine.addEventListener('click',function(){
+    x.push(9);
+    let x_num = +x.join("")
+    displayscreen(x_num)
+    
+});
+zero.addEventListener('click',function(){
+    x.push(0);
+    let x_num = +x.join("")
+    displayscreen(x_num)
+    
+});
